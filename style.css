@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css? family=Poppins:200,300,400,500,600,700,800,900& display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+}
+.containe
+{
+    position: relative;
+    padding: 0 100px;
+    min-height: 100vh;
+  
+}
+.containe:before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 380px;
+    background:#333;
+    z-index:-1;
+}
+
+
+heder
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+heder .logo
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+heder .logo:before 
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(pic11.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    z-index: -1;
+    transition: 2.5s ease-in-out;
+}
+heder .logo:hover:before
+{
+    width: 68%;
+}
+
+heder .logo span
+{
+    color: #78ff00;
+}
+heder ul
+{
+    position: relative;
+    display: flex;
+}
+heder ul li
+{
+    list-style: none;
+    margin: 0 20px;
+}
+heder ul li a
+{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 10px;
+    color: #333;
+    text-transform: capitalize;
+}
+heder ul li:nth-child(3) a,
+heder ul li:nth-child(4) a
+{
+    color: #fff;
+}
+heder ul li a:before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #78ff00;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+
+}
+heder ul li a:hover:before
+{
+    width: 90%;
+} 
+heder ul li a.active:before
+{
+    width:40%;
+    
+}
+
